@@ -131,8 +131,8 @@ class User {
   }
 }
 
-let billy = new Person('billy', 'paul simon')
-billy.favoriteBandListed(['paul simon', 'the kooks'])
+let billy = new User('billy', 'paul simon')
+billy.favoriteBandMatches(['paul simon', 'the kooks'])
 // Uncaught TypeError: Cannot read property 'band' of undefined
 ```
 
@@ -153,8 +153,8 @@ class User {
   }
 }
 
-let billy = new Person('billy', 'paul simon')
-billy.favoriteBandListed(['paul simon', 'the kooks'])
+let billy = new User('billy', 'paul simon')
+billy.favoriteBandMatches(['paul simon', 'the kooks'])
 // 'paul simon'
 ```
 
@@ -171,3 +171,5 @@ We reviewed how `this` works for simple function calls. Then we saw how `call` a
 - [MDN: Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-object-oriented-bind-call-apply-readme'>Javascript bind call and apply</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-object-oriented-bind-call-apply-readme'>Bind Call Apply</a> on Learn.co and start learning to code for free.</p>
