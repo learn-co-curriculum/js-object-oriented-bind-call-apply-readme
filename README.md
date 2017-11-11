@@ -150,6 +150,7 @@ class User {
       // here, this is global
       return band == this.favoriteBand
     }.bind(this))
+    return this.favoriteBand
   }
 }
 
