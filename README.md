@@ -125,9 +125,9 @@ class User {
     this.favoriteBand = favoriteBand
   }
   favoriteBandMatches(bands){
-    bands.filter(function(band){
+    return bands.filter(function(band){
       return band == this.favoriteBand
-    })
+    })[0]
   }
 }
 
@@ -146,10 +146,10 @@ class User {
   }
   favoriteBandMatches(bands){
     // here this is the User instance
-    bands.filter(function(band){
+    return bands.filter(function(band){
       // here, this is global
       return band == this.favoriteBand
-    }.bind(this))
+    }.bind(this))[0]
   }
 }
 
